@@ -1,0 +1,25 @@
+if {![file exists "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/SIM/SIM.mpf"]} { 
+	project new "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/SIM" SIM
+	project addfile "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/add.v"
+	project addfile "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4_ALU.v"
+	project addfile "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v"
+	project addfile "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/PLL.v"
+	project addfile "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.v"
+	project addfile "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/sim.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4  -work work  "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/add.v"
+	vlog  +incdir+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4  -work work  "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4_ALU.v"
+	vlog  +incdir+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4  -work work  "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v"
+	vlog  +incdir+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4  -work work  "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/PLL.v"
+	vlog  +incdir+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4  -work work  "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.v"
+	vlog  +incdir+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4  -work work  "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/sim.v"
+} else {
+	project open "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/SIM/SIM"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  sim
+view wave
+add wave /*
+run 1000ns

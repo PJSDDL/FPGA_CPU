@@ -1,0 +1,39 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-4000HC
+PartName=LCMXO2-4000HC-4MG132I
+SpeedGrade=4
+Package=CSBGA132
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Adder
+CoreRevision=3.5
+ModuleName=add
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=07/04/2024
+Time=17:23:43
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+InputWidth=16
+Representation=Unsigned
+UseCIport=1
+COport=Carry-Out
+OutReg=0
+Complex=0
+Stage=0
+
+[Command]
+cmd_line= -w -n add -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type mgaddsub -width 16 -unsigned -cin -cout -pipeline 0

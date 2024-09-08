@@ -1,0 +1,1 @@
+D:/Diamond/diamond/3.12/bin/nt64/moduleparser.exe -PROJ SIM -pf D:/Diamond/diamond/3.12/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pf D:/Diamond/diamond/3.12/cae_library/synthesis/verilog/machxo2.v -pkg D:/Diamond/diamond/3.12/cae_library/vhdl_packages/vdbs -lst D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/SIM/source_files.lst

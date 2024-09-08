@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(5): Semantic error in &quot;LOCATE COMP &quot;led[0]&quot; SITE &quot;K1&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[0]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(6): Semantic error in &quot;LOCATE COMP &quot;led[1]&quot; SITE &quot;A11&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[1]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(7): Semantic error in &quot;LOCATE COMP &quot;led[2]&quot; SITE &quot;B12&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[2]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(8): Semantic error in &quot;LOCATE COMP &quot;led[3]&quot; SITE &quot;H2&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[3]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(9): Semantic error in &quot;LOCATE COMP &quot;led[4]&quot; SITE &quot;H1&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[4]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(10): Semantic error in &quot;LOCATE COMP &quot;led[5]&quot; SITE &quot;J1&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[5]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(11): Semantic error in &quot;LOCATE COMP &quot;led[6]&quot; SITE &quot;B14&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[6]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(12): Semantic error in &quot;LOCATE COMP &quot;led[7]&quot; SITE &quot;C12&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[7]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(13): Semantic error in &quot;LOCATE COMP &quot;led[8]&quot; SITE &quot;F1&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[8]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(14): Semantic error in &quot;LOCATE COMP &quot;led[9]&quot; SITE &quot;B9&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[9]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(15): Semantic error in &quot;LOCATE COMP &quot;led[10]&quot; SITE &quot;A9&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[10]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(16): Semantic error in &quot;LOCATE COMP &quot;led[11]&quot; SITE &quot;E2&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[11]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(17): Semantic error in &quot;LOCATE COMP &quot;led[12]&quot; SITE &quot;E1&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[12]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(18): Semantic error in &quot;LOCATE COMP &quot;led[13]&quot; SITE &quot;F2&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[13]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(19): Semantic error in &quot;LOCATE COMP &quot;led[14]&quot; SITE &quot;C11&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[14]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(20): Semantic error in &quot;LOCATE COMP &quot;led[15]&quot; SITE &quot;A10&quot; ;&quot;: </Dynamic>
+            <Dynamic>led[15]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(25): Semantic error in &quot;IOBUF PORT &quot;led[0]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[0]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(26): Semantic error in &quot;IOBUF PORT &quot;led[1]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[1]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>26</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(27): Semantic error in &quot;IOBUF PORT &quot;led[2]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[2]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>27</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(28): Semantic error in &quot;IOBUF PORT &quot;led[3]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[3]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>28</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(29): Semantic error in &quot;IOBUF PORT &quot;led[4]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[4]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>29</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(30): Semantic error in &quot;IOBUF PORT &quot;led[5]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[5]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>30</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(31): Semantic error in &quot;IOBUF PORT &quot;led[6]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[6]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(32): Semantic error in &quot;IOBUF PORT &quot;led[7]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[7]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(33): Semantic error in &quot;IOBUF PORT &quot;led[8]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[8]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(34): Semantic error in &quot;IOBUF PORT &quot;led[9]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[9]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(35): Semantic error in &quot;IOBUF PORT &quot;led[10]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[10]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(36): Semantic error in &quot;IOBUF PORT &quot;led[11]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[11]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(37): Semantic error in &quot;IOBUF PORT &quot;led[12]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[12]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>37</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(38): Semantic error in &quot;IOBUF PORT &quot;led[13]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[13]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(39): Semantic error in &quot;IOBUF PORT &quot;led[14]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[14]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(40): Semantic error in &quot;IOBUF PORT &quot;led[15]&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>led[15]</Dynamic>
+            <Navigation>D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(3): </Dynamic>
+            <Dynamic>CPU4</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/pll.v(8): </Dynamic>
+            <Dynamic>PLL</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=7,CLKOP_DIV=11,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=10,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/ram.v(8): </Dynamic>
+            <Dynamic>ram</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/ram.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_2</Dynamic>
+            <Navigation>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4_alu.v(1): </Dynamic>
+            <Dynamic>ALU</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4_alu.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/add.v(8): </Dynamic>
+            <Dynamic>add</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/add.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(106): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>106</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(156): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>156</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(159): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>159</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(163): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>163</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(164): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>164</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(171): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>171</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(175): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>175</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(181): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>181</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(185): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>185</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(191): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>191</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(194): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>194</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(198): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>198</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(199): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>16</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>199</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(298): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>298</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(302): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>302</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>statu</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(324): </Dynamic>
+            <Dynamic>alu_type_i0_i3</Dynamic>
+            <Navigation>d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v</Navigation>
+            <Navigation>324</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=ALU_M/Co_N_451 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=ALU_M/Co_N_451 loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

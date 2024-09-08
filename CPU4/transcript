@@ -1,0 +1,146 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do {D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/SIM/SIM.mdo}
+# Loading project SIM
+# Compile of sim.v was successful.
+# vsim -L work -L pmi_work -L ovi_machxo2 sim 
+# Start time: 16:57:04 on Jul 21,2024
+# //  ModelSim - Lattice FPGA Edition 2020.3 Oct 14 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.sim
+# Loading ovi_machxo2.GSR
+# Loading ovi_machxo2.PUR
+# Loading work.CPU4
+# Loading work.PLL
+# Loading ovi_machxo2.VLO
+# Loading ovi_machxo2.EHXPLLJ
+# Loading work.ram
+# Loading ovi_machxo2.DP8KC
+# Loading ovi_machxo2.VHI
+# Loading work.ALU
+# Loading work.add
+# Loading ovi_machxo2.FADD2B
+# WARNING: No extended dataflow license exists
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Lenovo  Hostname: LAPTOP-3BIAKMP7  ProcessID: 16208
+#           Attempting to use alternate WLF file "./wlfteqj9tt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfteqj9tt
+do D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/wave.do
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+add wave -position insertpoint  \
+sim:/sim/rx
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+run -all
+vlog -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:10:32 on Jul 21,2024
+# vlog -reportprogress 300 -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 17:10:32 on Jul 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:10:33 on Jul 21,2024
+# vlog -reportprogress 300 -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 17:10:33 on Jul 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ram
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:11:28 on Jul 21,2024
+# vlog -reportprogress 300 -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 17:11:28 on Jul 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ram
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+add wave -position insertpoint  \
+sim:/sim/LED
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+run -all
+vlog -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:12:41 on Jul 21,2024
+# vlog -reportprogress 300 -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 17:12:41 on Jul 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ram
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+vlog -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 17:14:32 on Jul 21,2024
+# vlog -reportprogress 300 -work work -O0 D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 17:14:32 on Jul 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ram
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+restart
+run -all
+# GetModuleFileName: 找不到指定的模块。
+# 
+# 
+# End time: 17:24:35 on Jul 21,2024, Elapsed time: 0:27:31
+# Errors: 0, Warnings: 1

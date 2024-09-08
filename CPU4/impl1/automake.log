@@ -1,0 +1,513 @@
+
+synthesis -f "CPU4_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Jul 21 16:25:26 2024
+
+
+Command Line:  synthesis -f CPU4_impl1_lattice.synproj -gui -msgset D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = CPU4.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4 (searchpath added)
+-p D:/Diamond/diamond/3.12/ispfpga/xo2c00/data (searchpath added)
+-p D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/impl1 (searchpath added)
+-p D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4 (searchpath added)
+Verilog design file = D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.v
+Verilog design file = D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4_ALU.v
+Verilog design file = D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/add.v
+Verilog design file = D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/PLL.v
+Verilog design file = D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+NGD file = CPU4_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v. VERI-1482
+Analyzing Verilog file d:/a_step_fpga_project/cpu4.5/cpu4/cpu4_alu.v. VERI-1482
+Analyzing Verilog file d:/a_step_fpga_project/cpu4.5/cpu4/add.v. VERI-1482
+Analyzing Verilog file d:/a_step_fpga_project/cpu4.5/cpu4/pll.v. VERI-1482
+Analyzing Verilog file d:/a_step_fpga_project/cpu4.5/cpu4/ram.v. VERI-1482
+Analyzing Verilog file D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): CPU4
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(3): " arg1="CPU4" arg2="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg3="3"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/pll.v(8): " arg1="PLL" arg2="d:/a_step_fpga_project/cpu4.5/cpu4/pll.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): " arg1="EHXPLLJ(CLKFB_DIV=7,CLKOP_DIV=11,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=10,CLKOS_TRIM_POL=&quot;FALLING&quot;)" arg2="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1730"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/ram.v(8): " arg1="ram" arg2="d:/a_step_fpga_project/cpu4.5/cpu4/ram.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_1" arg2="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_2" arg2="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4_alu.v(1): " arg1="ALU" arg2="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4_alu.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/add.v(8): " arg1="add" arg2="d:/a_step_fpga_project/cpu4.5/cpu4/add.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): " arg1="FADD2B" arg2="D:/Diamond/diamond/3.12/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="138"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(106): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="106"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(156): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="156"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(159): " arg1="32" arg2="16" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="159"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(163): " arg1="32" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="163"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(164): " arg1="32" arg2="16" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="164"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(171): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="171"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(175): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="175"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(181): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="181"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(185): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="185"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(191): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="191"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(194): " arg1="32" arg2="16" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="194"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(198): " arg1="32" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="198"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(199): " arg1="32" arg2="16" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="199"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(298): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="298"  />
+    <postMsg mid="35901209" type="Warning" dynamic="3" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(302): " arg1="16" arg2="10" arg3="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg4="302"  />
+Last elaborated design is CPU4()
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = CPU4.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="statu" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 000001
+
+ 001 -> 000010
+
+ 010 -> 000100
+
+ 011 -> 001000
+
+ 100 -> 010000
+
+ 101 -> 100000
+
+
+
+
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v(324): " arg1="alu_type_i0_i3" arg2="d:/a_step_fpga_project/cpu4.5/cpu4/cpu4.v" arg3="324"  />
+GSR instance connected to net rst_c.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in CPU4_drc.log.
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Diamond/diamond/3.12/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    759 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file CPU4_impl1.ngd.
+
+################### Begin Area Report (CPU4)######################
+Number of register bits => 164 of 4635 (3 % )
+CCU2D => 27
+DP8KC => 2
+EHXPLLJ => 1
+FADD2B => 10
+FD1P3AX => 137
+FD1P3AY => 4
+FD1S1A => 17
+FD1S3AX => 4
+FD1S3IX => 1
+FD1S3JX => 1
+GSR => 1
+IB => 19
+LUT4 => 440
+OB => 18
+PFUMX => 74
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : clk_pll, loads : 150
+  Net : ALU_M/R_15__N_442, loads : 16
+  Net : clk_c, loads : 1
+  Net : ALU_M/Co_N_448, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 18
+Top 10 highest fanout Clock Enables:
+  Net : clk_pll_enable_98, loads : 16
+  Net : clk_pll_enable_74, loads : 16
+  Net : clk_pll_enable_59, loads : 16
+  Net : clk_pll_enable_44, loads : 16
+  Net : clk_pll_enable_113, loads : 16
+  Net : clk_pll_enable_131, loads : 13
+  Net : clk_pll_enable_140, loads : 11
+  Net : clk_pll_enable_83, loads : 10
+  Net : clk_pll_enable_120, loads : 8
+  Net : clk_pll_enable_141, loads : 7
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : prog_1, loads : 105
+  Net : prog_0, loads : 102
+  Net : n1331, loads : 56
+  Net : prog_2, loads : 51
+  Net : n1329, loads : 49
+  Net : prog_4, loads : 46
+  Net : prog_3, loads : 43
+  Net : alu_type_0, loads : 37
+  Net : alu_type_2, loads : 36
+  Net : alu_type_1, loads : 21
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets \ALU_M/Co_N_448]         |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \ALU_M/R_15__N_442]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_pll]                 |  200.000 MHz|   75.844 MHz|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 71.145  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.344  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Industrial   "CPU4_impl1.ngd" -o "CPU4_impl1_map.ncd" -pr "CPU4_impl1.prf" -mp "CPU4_impl1.mrp" -lpf "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/impl1/CPU4_impl1.lpf" -lpf "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: CPU4_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 4.
+
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(5): Semantic error in &quot;LOCATE COMP &quot;led[0]&quot; SITE &quot;K1&quot; ;&quot;: " arg1="led[0]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="5"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(6): Semantic error in &quot;LOCATE COMP &quot;led[1]&quot; SITE &quot;A11&quot; ;&quot;: " arg1="led[1]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="6"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(7): Semantic error in &quot;LOCATE COMP &quot;led[2]&quot; SITE &quot;B12&quot; ;&quot;: " arg1="led[2]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="7"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(8): Semantic error in &quot;LOCATE COMP &quot;led[3]&quot; SITE &quot;H2&quot; ;&quot;: " arg1="led[3]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="8"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(9): Semantic error in &quot;LOCATE COMP &quot;led[4]&quot; SITE &quot;H1&quot; ;&quot;: " arg1="led[4]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="9"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(10): Semantic error in &quot;LOCATE COMP &quot;led[5]&quot; SITE &quot;J1&quot; ;&quot;: " arg1="led[5]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="10"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(11): Semantic error in &quot;LOCATE COMP &quot;led[6]&quot; SITE &quot;B14&quot; ;&quot;: " arg1="led[6]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="11"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(12): Semantic error in &quot;LOCATE COMP &quot;led[7]&quot; SITE &quot;C12&quot; ;&quot;: " arg1="led[7]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="12"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(13): Semantic error in &quot;LOCATE COMP &quot;led[8]&quot; SITE &quot;F1&quot; ;&quot;: " arg1="led[8]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="13"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(14): Semantic error in &quot;LOCATE COMP &quot;led[9]&quot; SITE &quot;B9&quot; ;&quot;: " arg1="led[9]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="14"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(15): Semantic error in &quot;LOCATE COMP &quot;led[10]&quot; SITE &quot;A9&quot; ;&quot;: " arg1="led[10]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="15"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(16): Semantic error in &quot;LOCATE COMP &quot;led[11]&quot; SITE &quot;E2&quot; ;&quot;: " arg1="led[11]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="16"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(17): Semantic error in &quot;LOCATE COMP &quot;led[12]&quot; SITE &quot;E1&quot; ;&quot;: " arg1="led[12]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="17"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(18): Semantic error in &quot;LOCATE COMP &quot;led[13]&quot; SITE &quot;F2&quot; ;&quot;: " arg1="led[13]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="18"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(19): Semantic error in &quot;LOCATE COMP &quot;led[14]&quot; SITE &quot;C11&quot; ;&quot;: " arg1="led[14]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="19"  />
+    <postMsg mid="1100679" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(20): Semantic error in &quot;LOCATE COMP &quot;led[15]&quot; SITE &quot;A10&quot; ;&quot;: " arg1="led[15]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="20"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(25): Semantic error in &quot;IOBUF PORT &quot;led[0]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[0]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="25"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(26): Semantic error in &quot;IOBUF PORT &quot;led[1]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[1]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="26"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(27): Semantic error in &quot;IOBUF PORT &quot;led[2]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[2]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="27"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(28): Semantic error in &quot;IOBUF PORT &quot;led[3]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[3]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="28"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(29): Semantic error in &quot;IOBUF PORT &quot;led[4]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[4]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="29"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(30): Semantic error in &quot;IOBUF PORT &quot;led[5]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[5]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="30"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(31): Semantic error in &quot;IOBUF PORT &quot;led[6]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[6]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="31"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(32): Semantic error in &quot;IOBUF PORT &quot;led[7]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[7]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="32"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(33): Semantic error in &quot;IOBUF PORT &quot;led[8]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[8]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="33"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(34): Semantic error in &quot;IOBUF PORT &quot;led[9]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[9]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="34"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(35): Semantic error in &quot;IOBUF PORT &quot;led[10]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[10]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="35"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(36): Semantic error in &quot;IOBUF PORT &quot;led[11]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[11]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="36"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(37): Semantic error in &quot;IOBUF PORT &quot;led[12]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[12]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="37"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(38): Semantic error in &quot;IOBUF PORT &quot;led[13]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[13]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="38"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(39): Semantic error in &quot;IOBUF PORT &quot;led[14]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[14]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="39"  />
+    <postMsg mid="1100644" type="Warning" dynamic="2" navigation="2" arg0="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(40): Semantic error in &quot;IOBUF PORT &quot;led[15]&quot; IO_TYPE=LVCMOS33 ;&quot;: " arg1="led[15]" arg2="D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf" arg3="40"  />
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:    164 out of  4635 (4%)
+      PFU registers:          164 out of  4320 (4%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       257 out of  2160 (12%)
+      SLICEs as Logic/ROM:    257 out of  2160 (12%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         37 out of  2160 (2%)
+   Number of LUT4s:        511 out of  4320 (12%)
+      Number used as logic LUTs:        437
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       74
+      Number used as shift registers:     0
+   Number of PIO sites used: 37 + 4(JTAG) out of 105 (39%)
+   Number of block RAMs:  2 out of 10 (20%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  4
+     Net clk_pll: 92 loads, 92 rising, 0 falling (Driver: pll_m/PLLInst_0 )
+     Net ALU_M/R_15__N_442: 16 loads, 16 rising, 0 falling (Driver: ALU_M/i6243_2_lut_3_lut )
+     Net ALU_M/Co_N_448: 1 loads, 1 rising, 0 falling (Driver: ALU_M/i6237_2_lut_3_lut )
+     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  18
+     Net clk_pll_enable_44: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_59: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_74: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_83: 5 loads, 5 LSLICEs
+     Net clk_pll_enable_98: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_113: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_120: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_123: 2 loads, 2 LSLICEs
+     Net clk_pll_enable_141: 4 loads, 4 LSLICEs
+     Net clk_pll_enable_15: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_10: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_11: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_12: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_140: 6 loads, 6 LSLICEs
+     Net clk_pll_enable_131: 9 loads, 9 LSLICEs
+     Net clk_pll_enable_29: 3 loads, 3 LSLICEs
+     Net clk_pll_enable_122: 2 loads, 2 LSLICEs
+     Net clk_pll_enable_129: 1 loads, 1 LSLICEs
+   Number of LSRs:  2
+     Net n1329: 1 loads, 1 LSLICEs
+     Net n1333: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net prog_1: 104 loads
+     Net prog_0: 100 loads
+     Net n1331: 56 loads
+     Net prog_2: 51 loads
+     Net n1329: 49 loads
+     Net prog_4: 45 loads
+     Net prog_3: 41 loads
+     Net alu_type_0: 37 loads
+     Net alu_type_2: 36 loads
+     Net alu_type_1: 21 loads
+ 
+
+   Number of warnings:  32
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 2 secs  
+Peak Memory Usage: 53 MB
+
+Dumping design to file CPU4_impl1_map.ncd.
+
+ncd2vdb "CPU4_impl1_map.ncd" ".vdbs/CPU4_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: D:/Diamond/diamond/3.12/ispfpga.
+
+trce -f "CPU4_impl1.mt" -o "CPU4_impl1.tw1" "CPU4_impl1_map.ncd" "CPU4_impl1.prf"
+trce:  version Diamond (64-bit) 3.12.0.240.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file cpu4_impl1_map.ncd.
+Design name: CPU4
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/Diamond/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Sun Jul 21 16:25:33 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CPU4_impl1.tw1 -gui -msgset D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/promote.xml CPU4_impl1_map.ncd CPU4_impl1.prf 
+Design file:     cpu4_impl1_map.ncd
+Preference file: cpu4_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 3994 paths, 2 nets, and 1781 connections (84.41% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Sun Jul 21 16:25:33 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CPU4_impl1.tw1 -gui -msgset D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/promote.xml CPU4_impl1_map.ncd CPU4_impl1.prf 
+Design file:     cpu4_impl1_map.ncd
+Preference file: cpu4_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 3994 paths, 2 nets, and 1781 connections (84.41% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 61 MB
+

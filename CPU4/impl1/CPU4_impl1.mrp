@@ -1,0 +1,798 @@
+
+             Lattice Mapping Report File for Design Module 'CPU4'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Industrial
+     CPU4_impl1.ngd -o CPU4_impl1_map.ncd -pr CPU4_impl1.prf -mp CPU4_impl1.mrp
+     -lpf D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/impl1/CPU4_impl1.lpf -lpf
+     D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf -c 0 -gui -msgset
+     D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  07/21/24  16:25:30
+
+Design Summary
+--------------
+
+   Number of registers:    164 out of  4635 (4%)
+      PFU registers:          164 out of  4320 (4%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       257 out of  2160 (12%)
+      SLICEs as Logic/ROM:    257 out of  2160 (12%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         37 out of  2160 (2%)
+   Number of LUT4s:        511 out of  4320 (12%)
+      Number used as logic LUTs:        437
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       74
+      Number used as shift registers:     0
+   Number of PIO sites used: 37 + 4(JTAG) out of 105 (39%)
+   Number of block RAMs:  2 out of 10 (20%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  4
+     Net clk_pll: 92 loads, 92 rising, 0 falling (Driver: pll_m/PLLInst_0 )
+     Net ALU_M/R_15__N_442: 16 loads, 16 rising, 0 falling (Driver:
+     ALU_M/i6243_2_lut_3_lut )
+
+                                    Page 1
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+Design Summary (cont)
+---------------------
+     Net ALU_M/Co_N_448: 1 loads, 1 rising, 0 falling (Driver:
+     ALU_M/i6237_2_lut_3_lut )
+     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
+   Number of Clock Enables:  18
+     Net clk_pll_enable_44: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_59: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_74: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_83: 5 loads, 5 LSLICEs
+     Net clk_pll_enable_98: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_113: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_120: 8 loads, 8 LSLICEs
+     Net clk_pll_enable_123: 2 loads, 2 LSLICEs
+     Net clk_pll_enable_141: 4 loads, 4 LSLICEs
+     Net clk_pll_enable_15: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_10: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_11: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_12: 1 loads, 1 LSLICEs
+     Net clk_pll_enable_140: 6 loads, 6 LSLICEs
+     Net clk_pll_enable_131: 9 loads, 9 LSLICEs
+     Net clk_pll_enable_29: 3 loads, 3 LSLICEs
+     Net clk_pll_enable_122: 2 loads, 2 LSLICEs
+     Net clk_pll_enable_129: 1 loads, 1 LSLICEs
+   Number of LSRs:  2
+     Net n1329: 1 loads, 1 LSLICEs
+     Net n1333: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net prog_1: 104 loads
+     Net prog_0: 100 loads
+     Net n1331: 56 loads
+     Net prog_2: 51 loads
+     Net n1329: 49 loads
+     Net prog_4: 45 loads
+     Net prog_3: 41 loads
+     Net alu_type_0: 37 loads
+     Net alu_type_2: 36 loads
+     Net alu_type_1: 21 loads
+
+
+
+
+   Number of warnings:  32
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(5): Semantic error in
+     "LOCATE COMP "led[0]" SITE "K1" ;": COMP "led[0]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(6): Semantic error in
+     "LOCATE COMP "led[1]" SITE "A11" ;": COMP "led[1]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(7): Semantic error in
+     "LOCATE COMP "led[2]" SITE "B12" ;": COMP "led[2]" cannot be found in
+
+                                    Page 2
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+Design Errors/Warnings (cont)
+-----------------------------
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(8): Semantic error in
+     "LOCATE COMP "led[3]" SITE "H2" ;": COMP "led[3]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(9): Semantic error in
+     "LOCATE COMP "led[4]" SITE "H1" ;": COMP "led[4]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(10): Semantic error
+     in "LOCATE COMP "led[5]" SITE "J1" ;": COMP "led[5]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(11): Semantic error
+     in "LOCATE COMP "led[6]" SITE "B14" ;": COMP "led[6]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(12): Semantic error
+     in "LOCATE COMP "led[7]" SITE "C12" ;": COMP "led[7]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(13): Semantic error
+     in "LOCATE COMP "led[8]" SITE "F1" ;": COMP "led[8]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(14): Semantic error
+     in "LOCATE COMP "led[9]" SITE "B9" ;": COMP "led[9]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(15): Semantic error
+     in "LOCATE COMP "led[10]" SITE "A9" ;": COMP "led[10]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(16): Semantic error
+     in "LOCATE COMP "led[11]" SITE "E2" ;": COMP "led[11]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(17): Semantic error
+     in "LOCATE COMP "led[12]" SITE "E1" ;": COMP "led[12]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(18): Semantic error
+     in "LOCATE COMP "led[13]" SITE "F2" ;": COMP "led[13]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(19): Semantic error
+     in "LOCATE COMP "led[14]" SITE "C11" ;": COMP "led[14]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(20): Semantic error
+     in "LOCATE COMP "led[15]" SITE "A10" ;": COMP "led[15]" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(25): Semantic error
+     in "IOBUF PORT "led[0]" IO_TYPE=LVCMOS33 ;": Port "led[0]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(26): Semantic error
+     in "IOBUF PORT "led[1]" IO_TYPE=LVCMOS33 ;": Port "led[1]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(27): Semantic error
+     in "IOBUF PORT "led[2]" IO_TYPE=LVCMOS33 ;": Port "led[2]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(28): Semantic error
+     in "IOBUF PORT "led[3]" IO_TYPE=LVCMOS33 ;": Port "led[3]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(29): Semantic error
+     in "IOBUF PORT "led[4]" IO_TYPE=LVCMOS33 ;": Port "led[4]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(30): Semantic error
+
+                                    Page 3
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+Design Errors/Warnings (cont)
+-----------------------------
+     in "IOBUF PORT "led[5]" IO_TYPE=LVCMOS33 ;": Port "led[5]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(31): Semantic error
+     in "IOBUF PORT "led[6]" IO_TYPE=LVCMOS33 ;": Port "led[6]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(32): Semantic error
+     in "IOBUF PORT "led[7]" IO_TYPE=LVCMOS33 ;": Port "led[7]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(33): Semantic error
+     in "IOBUF PORT "led[8]" IO_TYPE=LVCMOS33 ;": Port "led[8]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(34): Semantic error
+     in "IOBUF PORT "led[9]" IO_TYPE=LVCMOS33 ;": Port "led[9]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(35): Semantic error
+     in "IOBUF PORT "led[10]" IO_TYPE=LVCMOS33 ;": Port "led[10]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(36): Semantic error
+     in "IOBUF PORT "led[11]" IO_TYPE=LVCMOS33 ;": Port "led[11]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(37): Semantic error
+     in "IOBUF PORT "led[12]" IO_TYPE=LVCMOS33 ;": Port "led[12]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(38): Semantic error
+     in "IOBUF PORT "led[13]" IO_TYPE=LVCMOS33 ;": Port "led[13]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(39): Semantic error
+     in "IOBUF PORT "led[14]" IO_TYPE=LVCMOS33 ;": Port "led[14]" does not exist
+     in the design. This preference has been disabled.
+WARNING - map: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.lpf(40): Semantic error
+     in "IOBUF PORT "led[15]" IO_TYPE=LVCMOS33 ;": Port "led[15]" does not exist
+     in the design. This preference has been disabled.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| P[3]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[4]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[5]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[6]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[7]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[8]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[9]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rx[0]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 4
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+IO (PIO) Attributes (cont)
+--------------------------
+| P[10]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rx[1]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| P[11]               | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[12]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| P[13]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| P[14]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[2]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[3]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[4]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[5]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| P[2]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rx[6]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[7]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[8]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[9]               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[10]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[11]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[12]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rst                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rx[13]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| rx[14]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led_dig[0]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rx[15]              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| key                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led_dig[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[0]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| P[1]                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 5
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+IO (PIO) Attributes (cont)
+--------------------------
+| P[15]               | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal n5331 was merged into signal n1333
+Signal n9067 was merged into signal n1331
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal sub_171_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_171_add_2_1/CI undriven or does not drive anything - clipped.
+Signal add_27_1/S0 undriven or does not drive anything - clipped.
+Signal add_27_1/CI undriven or does not drive anything - clipped.
+Signal sub_171_add_2_11/CO undriven or does not drive anything - clipped.
+Signal add_169_1/S0 undriven or does not drive anything - clipped.
+Signal add_169_1/CI undriven or does not drive anything - clipped.
+Signal add_27_11/S1 undriven or does not drive anything - clipped.
+Signal add_27_11/CO undriven or does not drive anything - clipped.
+Signal add_169_11/CO undriven or does not drive anything - clipped.
+Signal ALU_M/ADD_M/precin_inst53/S1 undriven or does not drive anything -
+     clipped.
+Signal ALU_M/ADD_M/precin_inst53/S0 undriven or does not drive anything -
+     clipped.
+Signal ALU_M/ADD_M/addsub_8/COUT undriven or does not drive anything - clipped.
+Signal ALU_M/ADD_M/addsub_0/S0 undriven or does not drive anything - clipped.
+Signal ALU_M/add_694_1/S0 undriven or does not drive anything - clipped.
+Signal ALU_M/add_694_1/CI undriven or does not drive anything - clipped.
+Signal ALU_M/add_694_17/CO undriven or does not drive anything - clipped.
+Block i2870_1_lut was optimized away.
+Block i1270_1_lut_rep_75 was optimized away.
+Block i2 was optimized away.
+
+Memory Usage
+------------
+
+    
+         
+    INFO: Design contains EBR with GSR enabled. The GSR is only applicable for
+         output registers except FIFO. 
+    /RAM_M:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR ram_0_1_0:  TYPE= DP8KC,  Width_A= 7,  Depth_A= 1024,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= ram.mem,  MEM_LPC_FILE= ram.lpc
+    -Contains EBR ram_0_0_1:  TYPE= DP8KC,  Width_A= 9,  Depth_A= 1024,
+         REGMODE_A= NOREG,  REGMODE_B= NOREG,  RESETMODE= ASYNC,
+         ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,  WRITEMODE_B= NORMAL,
+         GSR= ENABLED,  MEM_INIT_FILE= ram.mem,  MEM_LPC_FILE= ram.lpc
+
+     
+
+
+
+                                    Page 6
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                pll_m/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             PIN      clk_c
+  Output Clock(P):                         NODE     clk_pll
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_pll
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                       7.0000
+  Output Clock(P) Frequency (MHz):                  49.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              VCO_PHASE
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+
+                                    Page 7
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+PLL/DLL Summary (cont)
+----------------------
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    7
+  CLKOP Divider:                                    11
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               0
+
+ASIC Components
+---------------
+
+Instance Name: RAM_M/ram_0_1_0
+         Type: DP8KC
+Instance Name: RAM_M/ram_0_0_1
+         Type: DP8KC
+Instance Name: pll_m/PLLInst_0
+         Type: EHXPLLJ
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'rst_c' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 135 
+
+     Type and instance name of component: 
+   Register : B_i0_i0
+   Register : alu_a_i0_i0
+
+                                    Page 8
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+GSR Usage (cont)
+----------------
+   Register : alu_b_i0_i0
+   Register : PC_temp_i0_i0
+   Register : ram_in_i0_i0
+   Register : P_i0_i1
+   Register : alu_type_i0_i0
+   Register : ALU_M/R_15__I_0_i1
+   Register : ALU_M/Co_I_0
+   Register : ALU_M/R_15__I_0_i2
+   Register : ALU_M/R_15__I_0_i3
+   Register : ALU_M/R_15__I_0_i4
+   Register : ALU_M/R_15__I_0_i5
+   Register : ALU_M/R_15__I_0_i6
+   Register : ALU_M/R_15__I_0_i7
+   Register : ALU_M/R_15__I_0_i8
+   Register : ALU_M/R_15__I_0_i9
+   Register : ALU_M/R_15__I_0_i10
+   Register : ALU_M/R_15__I_0_i11
+   Register : ALU_M/R_15__I_0_i12
+   Register : ALU_M/R_15__I_0_i13
+   Register : ALU_M/R_15__I_0_i14
+   Register : ALU_M/R_15__I_0_i15
+   Register : ALU_M/R_15__I_0_i16
+   Register : prog__0__i1
+   Register : flag_141
+   Register : A_i0_i1
+   Register : alu_type_i0_i1
+   Register : A_i0_i2
+   Register : A_i0_i3
+   Register : A_i0_i4
+   Register : A_i0_i5
+   Register : A_i0_i6
+   Register : A_i0_i7
+   Register : A_i0_i8
+   Register : A_i0_i9
+   Register : A_i0_i10
+   Register : A_i0_i11
+   Register : A_i0_i12
+   Register : A_i0_i13
+   Register : A_i0_i14
+   Register : A_i0_i15
+   Register : B_i0_i1
+   Register : B_i0_i2
+   Register : B_i0_i3
+   Register : B_i0_i4
+   Register : B_i0_i5
+   Register : B_i0_i6
+   Register : B_i0_i7
+   Register : B_i0_i8
+   Register : B_i0_i9
+   Register : B_i0_i10
+   Register : B_i0_i11
+   Register : B_i0_i12
+   Register : B_i0_i13
+   Register : B_i0_i14
+   Register : B_i0_i15
+   Register : alu_a_i0_i1
+
+                                    Page 9
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+GSR Usage (cont)
+----------------
+   Register : alu_a_i0_i2
+   Register : alu_a_i0_i3
+   Register : alu_a_i0_i4
+   Register : alu_a_i0_i5
+   Register : alu_a_i0_i6
+   Register : alu_a_i0_i7
+   Register : alu_a_i0_i8
+   Register : alu_a_i0_i9
+   Register : alu_a_i0_i10
+   Register : alu_a_i0_i11
+   Register : alu_a_i0_i12
+   Register : alu_a_i0_i13
+   Register : alu_a_i0_i14
+   Register : alu_a_i0_i15
+   Register : alu_b_i0_i1
+   Register : alu_b_i0_i2
+   Register : alu_b_i0_i3
+   Register : alu_b_i0_i4
+   Register : alu_b_i0_i5
+   Register : alu_b_i0_i6
+   Register : alu_b_i0_i7
+   Register : alu_b_i0_i8
+   Register : alu_b_i0_i9
+   Register : alu_b_i0_i10
+   Register : alu_b_i0_i11
+   Register : alu_b_i0_i12
+   Register : alu_b_i0_i13
+   Register : alu_b_i0_i14
+   Register : alu_b_i0_i15
+   Register : PC_temp_i0_i1
+   Register : PC_temp_i0_i2
+   Register : PC_temp_i0_i3
+   Register : PC_temp_i0_i4
+   Register : PC_temp_i0_i5
+   Register : PC_temp_i0_i6
+   Register : PC_temp_i0_i7
+   Register : PC_temp_i0_i8
+   Register : PC_temp_i0_i9
+   Register : ram_in_i0_i1
+   Register : ram_in_i0_i2
+   Register : ram_in_i0_i3
+   Register : ram_in_i0_i4
+   Register : ram_in_i0_i5
+   Register : ram_in_i0_i6
+   Register : ram_in_i0_i7
+   Register : ram_in_i0_i8
+   Register : ram_in_i0_i9
+   Register : ram_in_i0_i10
+   Register : ram_in_i0_i11
+   Register : ram_in_i0_i12
+   Register : ram_in_i0_i13
+   Register : ram_in_i0_i14
+   Register : ram_in_i0_i15
+   Register : P_i0_i2
+   Register : P_i0_i3
+   Register : P_i0_i4
+
+                                   Page 10
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+GSR Usage (cont)
+----------------
+   Register : P_i0_i5
+   Register : P_i0_i6
+   Register : P_i0_i7
+   Register : P_i0_i8
+   Register : P_i0_i9
+   Register : P_i0_i10
+   Register : P_i0_i11
+   Register : P_i0_i12
+   Register : P_i0_i13
+   Register : P_i0_i14
+   Register : P_i0_i15
+   Register : P_i0_i16
+   Register : alu_type_i0_i2
+   Register : prog__0__i2
+   Register : prog__0__i3
+   Register : prog__0__i4
+   Register : prog__0__i5
+   Register : alu_cin_144
+   Register : prog__0__i4_rep_86
+   Register : A_i0_i0
+   Register : prog__0__i3_rep_87
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 2 
+
+     Type and instance name of component: 
+   Register : statu_FSM_i1
+   Register : statu_FSM_i3
+
+     EBR components with enabled GSR
+-------------------------------
+
+     These EBR components have the GSR property set to ENABLED. The components
+     will respond to the asynchronous reset signal 'rst_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   DP8KC = 2
+
+     Type and instance name of component: 
+   DP8KC : RAM_M/ram_0_1_0
+   DP8KC : RAM_M/ram_0_0_1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 2 secs  
+
+                                   Page 11
+
+
+
+
+Design:  CPU4                                          Date:  07/21/24  16:25:31
+
+Run Time and Memory Usage (cont)
+--------------------------------
+   Peak Memory Usage: 53 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 12
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

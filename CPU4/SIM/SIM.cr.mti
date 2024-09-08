@@ -1,0 +1,43 @@
+D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/PLL.v {1 {vlog -work work -stats=none D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/PLL.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module PLL
+
+Top level modules:
+	PLL
+
+} {} {}} D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.v {1 {vlog -work work -stats=none D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module CPU4
+
+Top level modules:
+	CPU4
+
+} {} {}} D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v {1 {vlog -work work -stats=none D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/ram.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/sim.v {1 {vlog -work work -stats=none D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/sim.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module sim
+
+Top level modules:
+	sim
+
+} {} {}} D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/add.v {1 {vlog -work work -stats=none D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/add.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module add
+
+Top level modules:
+	add
+
+} {} {}} D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4_ALU.v {1 {vlog -work work -stats=none D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4_ALU.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}}

@@ -1,0 +1,4 @@
+#Start recording tcl command: 7/13/2024 07:33:07
+#Project Location: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4; Project name: CPU4
+prj_project open "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.ldf"
+#Stop recording: 7/13/2024 07:44:10

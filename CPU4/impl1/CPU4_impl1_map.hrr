@@ -1,0 +1,46 @@
+---------------------------------------------------
+Report for cell CPU4
+   Instance path: CPU4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     257.00        100.0
+                                  LUT4	     437.00        100.0
+                                 IOBUF	         37        100.0
+                                PFUREG	        164        100.0
+                                RIPPLE	         37        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   ram	          1         0.0
+                                   PLL	          1         0.0
+                                   ALU	          1        16.1
+---------------------------------------------------
+Report for cell ram
+   Instance path: CPU4/RAM_M
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2        100.0
+---------------------------------------------------
+Report for cell ALU
+   Instance path: CPU4/ALU_M
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      41.25        16.1
+                                  LUT4	      45.00        10.3
+                                PFUREG	         17        10.4
+                                RIPPLE	         19        51.4
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   add	          1         3.9
+---------------------------------------------------
+Report for cell add
+   Instance path: CPU4/ALU_M/ADD_M
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.00         3.9
+                                RIPPLE	         10        27.0
+---------------------------------------------------
+Report for cell PLL
+   Instance path: CPU4/pll_m
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

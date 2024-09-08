@@ -1,0 +1,41 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Thu Jun 20 11:49:05 2024 *
+NOTE DESIGN NAME: DDS *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS key : N6 : in *
+NOTE PINS rst : L14 : in *
+NOTE PINS clk : C1 : in *
+NOTE PINS led_dig[0] : A12 : out *
+NOTE PINS led_dig[1] : C9 : out *
+NOTE PINS P[0] : C8 : out *
+NOTE PINS P[1] : B8 : out *
+NOTE PINS P[2] : E3 : out *
+NOTE PINS P[3] : F3 : out *
+NOTE PINS P[4] : G3 : out *
+NOTE PINS P[5] : H3 : out *
+NOTE PINS P[6] : E12 : out *
+NOTE PINS P[7] : F12 : out *
+NOTE PINS P[8] : G12 : out *
+NOTE PINS P[9] : F13 : out *
+NOTE PINS P[10] : F14 : out *
+NOTE PINS P[11] : G13 : out *
+NOTE PINS led[0] : K1 : out *
+NOTE PINS led[1] : A11 : out *
+NOTE PINS led[2] : B12 : out *
+NOTE PINS led[3] : H2 : out *
+NOTE PINS led[4] : H1 : out *
+NOTE PINS led[5] : J1 : out *
+NOTE PINS led[6] : B14 : out *
+NOTE PINS led[7] : C12 : out *
+NOTE PINS led[8] : F1 : out *
+NOTE PINS led[9] : B9 : out *
+NOTE PINS led[10] : A9 : out *
+NOTE PINS led[11] : E2 : out *
+NOTE PINS led[12] : E1 : out *
+NOTE PINS led[13] : F2 : out *
+NOTE PINS led[14] : C11 : out *
+NOTE PINS led[15] : A10 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

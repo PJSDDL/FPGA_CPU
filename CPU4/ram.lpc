@@ -1,0 +1,52 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-4000HC
+PartName=LCMXO2-4000HC-4MG132I
+SpeedGrade=4
+Package=CSBGA132
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=RAM_DQ
+CoreRevision=7.5
+ModuleName=ram
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=07/21/2024
+Time=17:17:41
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+Address=1024
+Data=16
+enByte=0
+ByteSize=9
+OutputEn=0
+ClockEn=0
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=mem
+MemFile=d:/a_step_fpga_project/cpu4.5/cpu4/ram.mem
+MemFormat=bin
+EnECC=0
+Pipeline=0
+Write=Normal
+init_data=1
+no_init=0
+
+[FilesGenerated]
+d:/a_step_fpga_project/cpu4.5/cpu4/ram.mem=mem
+
+[Command]
+cmd_line= -w -n ram -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type ramdq -device LCMXO2-4000HC -addr_width 10 -data_width 16 -num_words 1024 -cascade -1 -memfile d:/a_step_fpga_project/cpu4.5/cpu4/ram.mem -memformat bin -init_data DYNAMIC -writemode NORMAL

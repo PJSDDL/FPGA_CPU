@@ -1,0 +1,15 @@
+#Start recording tcl command: 7/3/2024 08:11:40
+#Project Location: D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4; Project name: CPU4
+prj_project open "D:/A_STEP_FPGA_PROJECT/CPU4.5/CPU4/CPU4.ldf"
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+prj_run Map -impl impl1 -task MapTrace
+#Stop recording: 7/3/2024 20:19:56

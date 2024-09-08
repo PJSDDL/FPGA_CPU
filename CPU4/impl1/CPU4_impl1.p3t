@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "CPU4_impl1.log"
+-o "CPU4_impl1.csv"
+-pr "CPU4_impl1.prf"

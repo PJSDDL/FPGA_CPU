@@ -1,0 +1,246 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Jul 21 16:25:30 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     CPU4
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets \ALU_M/Co_N_448]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets \ALU_M/R_15__N_442]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_pll]
+            4093 items scored, 4093 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 8.185ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKA           \RAM_M/ram_0_1_0  (from clk_pll +)
+   Destination:    FD1P3AX    SP             PC_i0_i7  (to clk_pll +)
+
+   Delay:                  12.900ns  (53.3% logic, 46.7% route), 5 logic levels.
+
+ Constraint Details:
+
+     12.900ns data_path \RAM_M/ram_0_1_0 to PC_i0_i7 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 8.185ns
+
+ Path Details: \RAM_M/ram_0_1_0 to PC_i0_i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.908           CLKA to DOA[9]         \RAM_M/ram_0_1_0 (from clk_pll)
+Route         6   e 1.457                                  ram_out[15]
+LUT4        ---     0.493              B to Z              i1_2_lut_rep_69
+Route         1   e 0.941                                  n9061
+LUT4        ---     0.493              B to Z              i3_4_lut_adj_57
+Route         1   e 0.941                                  n3518
+LUT4        ---     0.493              A to Z              i1_4_lut_rep_54
+Route         2   e 1.141                                  n9046
+LUT4        ---     0.493              B to Z              i6273_4_lut
+Route         8   e 1.540                                  clk_pll_enable_120
+                  --------
+                   12.900  (53.3% logic, 46.7% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 8.185ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKA           \RAM_M/ram_0_1_0  (from clk_pll +)
+   Destination:    FD1P3AX    SP             PC_i0_i6  (to clk_pll +)
+
+   Delay:                  12.900ns  (53.3% logic, 46.7% route), 5 logic levels.
+
+ Constraint Details:
+
+     12.900ns data_path \RAM_M/ram_0_1_0 to PC_i0_i6 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 8.185ns
+
+ Path Details: \RAM_M/ram_0_1_0 to PC_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.908           CLKA to DOA[9]         \RAM_M/ram_0_1_0 (from clk_pll)
+Route         6   e 1.457                                  ram_out[15]
+LUT4        ---     0.493              B to Z              i1_2_lut_rep_69
+Route         1   e 0.941                                  n9061
+LUT4        ---     0.493              B to Z              i3_4_lut_adj_57
+Route         1   e 0.941                                  n3518
+LUT4        ---     0.493              A to Z              i1_4_lut_rep_54
+Route         2   e 1.141                                  n9046
+LUT4        ---     0.493              B to Z              i6273_4_lut
+Route         8   e 1.540                                  clk_pll_enable_120
+                  --------
+                   12.900  (53.3% logic, 46.7% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 8.185ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKA           \RAM_M/ram_0_1_0  (from clk_pll +)
+   Destination:    FD1P3AX    SP             PC_i0_i5  (to clk_pll +)
+
+   Delay:                  12.900ns  (53.3% logic, 46.7% route), 5 logic levels.
+
+ Constraint Details:
+
+     12.900ns data_path \RAM_M/ram_0_1_0 to PC_i0_i5 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 8.185ns
+
+ Path Details: \RAM_M/ram_0_1_0 to PC_i0_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.908           CLKA to DOA[9]         \RAM_M/ram_0_1_0 (from clk_pll)
+Route         6   e 1.457                                  ram_out[15]
+LUT4        ---     0.493              B to Z              i1_2_lut_rep_69
+Route         1   e 0.941                                  n9061
+LUT4        ---     0.493              B to Z              i3_4_lut_adj_57
+Route         1   e 0.941                                  n3518
+LUT4        ---     0.493              A to Z              i1_4_lut_rep_54
+Route         2   e 1.141                                  n9046
+LUT4        ---     0.493              B to Z              i6273_4_lut
+Route         8   e 1.540                                  clk_pll_enable_120
+                  --------
+                   12.900  (53.3% logic, 46.7% route), 5 logic levels.
+
+Warning: 13.185 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets \ALU_M/Co_N_448]         |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \ALU_M/R_15__N_442]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_pll]                 |     5.000 ns|    13.185 ns|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+prog[1]                                 |     105|     658|     16.08%
+                                        |        |        |
+prog[4]                                 |      46|     595|     14.54%
+                                        |        |        |
+n6832                                   |      13|     522|     12.75%
+                                        |        |        |
+prog[0]                                 |     102|     459|     11.21%
+                                        |        |        |
+prog[2]                                 |      51|     436|     10.65%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 4093  Score: 11745648
+
+Constraints cover  4631 paths, 628 nets, and 1808 connections (76.0% coverage)
+
+
+Peak memory: 74391552 bytes, TRCE: 6127616 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

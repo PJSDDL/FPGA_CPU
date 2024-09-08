@@ -1,0 +1,61 @@
+----------------------------------------------------------------------
+Report for cell CPU4.TECH
+Register bits:  164 of 4635 (3.538%)
+I/O cells:      37
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        27          100.0
+                              DP8KC         2          100.0
+                            EHXPLLJ         1          100.0
+                             FADD2B        10          100.0
+                            FD1P3AX       137          100.0
+                            FD1P3AY         4          100.0
+                             FD1S1A        17          100.0
+                            FD1S3AX         4          100.0
+                            FD1S3IX         1          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB        19          100.0
+                               LUT4       440          100.0
+                                 OB        18          100.0
+                              PFUMX        74          100.0
+SUB MODULES
+                                ALU         1
+                                PLL         1
+                                add         1
+                                ram         1
+                              TOTAL       760
+----------------------------------------------------------------------
+Report for cell ram.v1
+Instance Path : RAM_M
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         2          100.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell ALU.v1
+Instance Path : ALU_M
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           33.3
+                             FADD2B        10          100.0
+                             FD1S1A        17          100.0
+                               LUT4        45           10.2
+                              PFUMX        17           23.0
+SUB MODULES
+                                add         1
+                              TOTAL        99
+----------------------------------------------------------------------
+Report for cell add.v1
+Instance Path : ALU_M.ADD_M
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             FADD2B        10          100.0
+                              TOTAL        10
+----------------------------------------------------------------------
+Report for cell PLL.v1
+Instance Path : pll_m
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1

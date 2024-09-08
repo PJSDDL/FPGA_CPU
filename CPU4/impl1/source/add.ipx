@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="add" module="add" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2024 06 15 16:10:56.552" version="3.5" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="add.lpc" type="lpc" modified="2024 06 15 16:10:53.981"/>
+		<File name="add.v" type="top_level_verilog" modified="2024 06 15 16:10:54.043"/>
+		<File name="add_tmpl.v" type="template_verilog" modified="2024 06 15 16:10:54.043"/>
+		<File name="tb_add_tmpl.v" type="testbench_verilog" modified="2024 06 15 16:10:54.049"/>
+  </Package>
+</DiamondModule>

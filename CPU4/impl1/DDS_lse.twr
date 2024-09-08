@@ -1,0 +1,230 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Jul 02 22:07:31 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     DDS
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets \ALU_M/R_11__N_363]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_pll]
+            512 items scored, 512 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 10.161ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             alu_b_i0_i0  (from clk_pll +)
+   Destination:    FD1S1I     D              \ALU_M/Co_I_0  (to clk_pll +)
+
+   Delay:                  15.001ns  (34.1% logic, 65.9% route), 11 logic levels.
+
+ Constraint Details:
+
+     15.001ns data_path alu_b_i0_i0 to \ALU_M/Co_I_0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 10.161ns
+
+ Path Details: alu_b_i0_i0 to \ALU_M/Co_I_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              alu_b_i0_i0 (from clk_pll)
+Route         4   e 1.398                                  \ALU_M/ADD_M/precin
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_0
+Route         1   e 0.941                                  \ALU_M/ADD_M/co0
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_1
+Route         1   e 0.941                                  \ALU_M/ADD_M/co1
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_2
+Route         1   e 0.941                                  \ALU_M/ADD_M/co2
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_3
+Route         1   e 0.941                                  \ALU_M/ADD_M/co3
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_4
+Route         1   e 0.941                                  \ALU_M/ADD_M/co4
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_5
+Route         1   e 0.941                                  \ALU_M/ADD_M/co5
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_6
+Route         1   e 0.941                                  \ALU_M/add_co
+LUT4        ---     0.493              C to Z              \ALU_M/i3644_2_lut_3_lut
+Route         1   e 0.941                                  \ALU_M/n3
+LUT4        ---     0.493              D to Z              \ALU_M/i5083_3_lut_4_lut
+Route         1   e 0.020                                  \ALU_M/n6
+MUXL5       ---     0.233           ALUT to Z              \ALU_M/mux_944_Mux_0_i7
+Route         1   e 0.941                                  \ALU_M/n2898
+                  --------
+                   15.001  (34.1% logic, 65.9% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 10.161ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             alu_a_i0_i0  (from clk_pll +)
+   Destination:    FD1S1I     D              \ALU_M/Co_I_0  (to clk_pll +)
+
+   Delay:                  15.001ns  (34.1% logic, 65.9% route), 11 logic levels.
+
+ Constraint Details:
+
+     15.001ns data_path alu_a_i0_i0 to \ALU_M/Co_I_0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 10.161ns
+
+ Path Details: alu_a_i0_i0 to \ALU_M/Co_I_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              alu_a_i0_i0 (from clk_pll)
+Route         4   e 1.398                                  \ALU_M/ADD_M/precin
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_0
+Route         1   e 0.941                                  \ALU_M/ADD_M/co0
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_1
+Route         1   e 0.941                                  \ALU_M/ADD_M/co1
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_2
+Route         1   e 0.941                                  \ALU_M/ADD_M/co2
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_3
+Route         1   e 0.941                                  \ALU_M/ADD_M/co3
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_4
+Route         1   e 0.941                                  \ALU_M/ADD_M/co4
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_5
+Route         1   e 0.941                                  \ALU_M/ADD_M/co5
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_6
+Route         1   e 0.941                                  \ALU_M/add_co
+LUT4        ---     0.493              C to Z              \ALU_M/i3644_2_lut_3_lut
+Route         1   e 0.941                                  \ALU_M/n3
+LUT4        ---     0.493              D to Z              \ALU_M/i5083_3_lut_4_lut
+Route         1   e 0.020                                  \ALU_M/n6
+MUXL5       ---     0.233           ALUT to Z              \ALU_M/mux_944_Mux_0_i7
+Route         1   e 0.941                                  \ALU_M/n2898
+                  --------
+                   15.001  (34.1% logic, 65.9% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 9.961ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             alu_cin_148  (from clk_pll +)
+   Destination:    FD1S1I     D              \ALU_M/Co_I_0  (to clk_pll +)
+
+   Delay:                  14.801ns  (34.6% logic, 65.4% route), 11 logic levels.
+
+ Constraint Details:
+
+     14.801ns data_path alu_cin_148 to \ALU_M/Co_I_0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 9.961ns
+
+ Path Details: alu_cin_148 to \ALU_M/Co_I_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              alu_cin_148 (from clk_pll)
+Route         2   e 1.198                                  \ALU_M/ADD_M/precin
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_0
+Route         1   e 0.941                                  \ALU_M/ADD_M/co0
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_1
+Route         1   e 0.941                                  \ALU_M/ADD_M/co1
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_2
+Route         1   e 0.941                                  \ALU_M/ADD_M/co2
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_3
+Route         1   e 0.941                                  \ALU_M/ADD_M/co3
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_4
+Route         1   e 0.941                                  \ALU_M/ADD_M/co4
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_5
+Route         1   e 0.941                                  \ALU_M/ADD_M/co5
+LUT4        ---     0.493                to                \ALU_M/ADD_M/addsub_6
+Route         1   e 0.941                                  \ALU_M/add_co
+LUT4        ---     0.493              C to Z              \ALU_M/i3644_2_lut_3_lut
+Route         1   e 0.941                                  \ALU_M/n3
+LUT4        ---     0.493              D to Z              \ALU_M/i5083_3_lut_4_lut
+Route         1   e 0.020                                  \ALU_M/n6
+MUXL5       ---     0.233           ALUT to Z              \ALU_M/mux_944_Mux_0_i7
+Route         1   e 0.941                                  \ALU_M/n2898
+                  --------
+                   14.801  (34.6% logic, 65.4% route), 11 logic levels.
+
+Warning: 15.161 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \ALU_M/R_11__N_363]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_pll]                 |     5.000 ns|    15.161 ns|    11 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n2312                                   |      10|     222|     43.36%
+                                        |        |        |
+n7465                                   |      14|      90|     17.58%
+                                        |        |        |
+\ALU_M/n2898                            |       1|      84|     16.41%
+                                        |        |        |
+prog[1]                                 |      74|      71|     13.87%
+                                        |        |        |
+\ALU_M/n5                               |       1|      68|     13.28%
+                                        |        |        |
+\ALU_M/n22                              |       1|      68|     13.28%
+                                        |        |        |
+\ALU_M/n2443                            |       1|      68|     13.28%
+                                        |        |        |
+n3524                                   |       1|      65|     12.70%
+                                        |        |        |
+n3525                                   |       1|      65|     12.70%
+                                        |        |        |
+n3528                                   |       1|      64|     12.50%
+                                        |        |        |
+n3529                                   |       1|      64|     12.50%
+                                        |        |        |
+PC_9__N_125[5]                          |       1|      60|     11.72%
+                                        |        |        |
+PC_9__N_135[5]                          |       1|      60|     11.72%
+                                        |        |        |
+prog[3]                                 |      56|      58|     11.33%
+                                        |        |        |
+PC_9__N_125[7]                          |       1|      57|     11.13%
+                                        |        |        |
+PC_9__N_135[7]                          |       1|      57|     11.13%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 512  Score: 3267214
+
+Constraints cover  4054 paths, 574 nets, and 1564 connections (80.7% coverage)
+
+
+Peak memory: 69746688 bytes, TRCE: 2936832 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

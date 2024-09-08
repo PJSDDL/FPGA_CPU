@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/A_STEP_FPGA_PROJECT/CPU4/CPU4"  
